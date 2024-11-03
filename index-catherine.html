@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/serif.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							# ARIA Labels
+
+							1. What are they?
+							2. Why are they used?
+
+							---
+							1. What are they?
+							
+							In short, ARIA Labels are tags used in Web Development. We add specific attributes
+							HTML elements.
+							---
+							2. Why are they used?
+
+							Nowadays, people of all ages, disabilities and technical background
+							use the websites and apps in their everyday life. They also use
+							numerous different devices, which themselves come with lots of capabilities.
+							
+							(assistive technologies like screen-reading)
+							
+							---
+
+							ARIA Labels help developers improve accessibility, by making their websites
+							look and feel more user-friendly. Thus, users of all backgrounds can easily
+							use a page across multiple platforms with ease.
+						  </textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							In this case, we will explain the Placeholder
+
+							The <mark>*aria-placeholder*</mark> is an attribute
+							used in textboxes or searchboxes to provide a hint
+							to the users on what they need to input in the
+							designated space.
+														
+						</textarea>
+					</section>
+
+					<section>
+						<p>The code would be like this:</p>
+
+			<pre><code>
+				<form>
+					<p>
+						<label for="comment">
+							<span>Comment: </span>
+							<input type="text" id="comment"
+								name="comment"
+								aria-placeholder="What are your thoughts?">
+						</label>
+					</p>
+				</form>
+			</code></pre>
+					</section>
+					<section>
+						<p>And the result would be this:</p>
+
+							<form class="r-frame">
+								<p>
+									<label for="comment">
+										<span>Comment: </span>
+										<input type="textarea" id="comment" name="comment"
+										aria-placeholder="What are your thoughts?" 
+										placeholder="What are your thoughts?">
+									</label>
+								</p>
+							</form>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							**Caution** : While a thankful tool, this ARIA label
+							can be confusing to the users, since the desired text
+							only shows when the textbox is completely empty. If 
+							for example there was a whitespace, the text would not
+							show, thus confusing the user instead of helping.
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							*Personal Opinion*
+
+							*The most common and less error-prone use case of this
+							ARIA label should be the searchboxes. If the user wants
+							to search, they'll search regardless of the placeholder
+							in question*
+						</textarea>
+					</section> 
+				</section>
+			
+				
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
