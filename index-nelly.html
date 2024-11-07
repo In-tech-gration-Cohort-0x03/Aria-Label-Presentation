@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+                <!-- FIRST PART -->
+                <section>
+                    <section data-background-color="lavender">
+                    <h2>ARIAL LABLES PRESENTATION</h2>
+
+                    <h4>What we'll see:</h4>
+                    <ol>
+                        <li>Why ARIA labels are important</li>
+                        <li>Common ARIA label use cases</li>
+                        <li>Tools for ARIA labels</li>
+                    </ol>
+                    </section>
+    
+                    <section data-background-color="lavender">
+                        <h4>Why ARIA labels are important</h4>
+                        <p>
+                            ARIA labels provide extra information that helps people with disabilities, to better understand and use websites or other apps.
+                        </p>
+                    </section>
+
+                    <section data-background-color="lavender">
+                        <p data-markdown>
+                            An **aria-label** adds a descriptive text that is only accessible to screen readers, helping users understand the function of these elements. 
+                        </p>
+                    </section>
+                    <section data-background-color="lavender">
+                        <p data-markdown>
+                            Example
+                            <p>
+                                <button style="padding: 10px 30px; font-size: 2rem; border: 2px solid rgb(190, 77, 190); border-radius: 8px; " aria-label="Go Back">🔙</button>                           
+                            </p>
+                            <p data-markdown="">
+                                <pre>
+        <code>
+            &lt;button aria-label="Go Back"&gt;🔙&lt;/button&gt;
+        </code>
+                                </pre>
+                            </p>
+                            
+                        </p>
+                    </section>
+                </section>
+
+                <!-- SECOND PART -->
+                <section>
+                    <section data-background-color="lavender">
+                        <h4>Common ARIA label use cases</h4>
+                        <p>
+                            Arial label are mostly used to give more info on:
+                            <ul>
+                                <li>Buttons</li>
+                                <li>Links</li>
+                                <li>Form fields</li>
+                                <li>Error messages</li>
+                                <li>And more others...</li>
+                            </ul>
+                        </p>
+                    </section>
+                </section>
+
+                <!-- THIRD PART -->
+                <section>
+                    <section data-background-color="lavender">
+                        <h4>Tools for ARIA labels</h4>
+
+                        <p data-markdown="">
+                            You can use Screen readers like:
+                            - NVDA stands for *NonVisual Desktop Access*
+                            - voiceOver
+                            - Jaws stand for *Job Access With Speech*
+                        </p>
+                        <p>
+                            You can also use browser developers tools to check for some Arial label issues.
+                        </p>
+                    </section>
+                </section>
+
+                <!-- Forth PART -->
+                <section>
+                    <section data-background-color="lavender">
+                        <h4>To sum up</h4>
+                        <p>
+                            ARIA labels are important because they help people with disabilities better understand and use websites. 
+                            ARIA labels provide extra information that screen readers can read out loud. 
+                            This makes it easier for people who can't see the screen to know what different parts of the website are for.
+                        </p>
+                        <p>
+                            Overall, using ARIA labels is an important way to make websites more accessible and inclusive for everyone.
+                        </p>
+                    </section>
+                </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
